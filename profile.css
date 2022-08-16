@@ -85,8 +85,20 @@
     margin-bottom: -50px;
     font-weight: 600;
     font-size: 16px;
+    
 }
 
+.profile-box button:hover {
+    background-color:#000000;
+    transition: 0.7s;
+}
+
+.profile-box button:focus {
+    outline-color: transparent;
+    outline-style: solid;
+    box-shadow: 0 0 0 4px #ff416c;
+    transition: 0.7s;
+}
 .profile-box h3{
     font-size: 22px;
     margin-top: 20px;
