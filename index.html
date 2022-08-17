@@ -22,8 +22,15 @@
                 <p>or use your email for registration</p>
                 <input type="text" name="txt" placeholder="Name" required="">
                 <input type="email" name="email" placeholder="Email" required="" onclick="ValidateEmail(document.form1.text1)">
-                <input type="password" name="pass" placeholder="Password" required="">
+                <input type="password" name="pass" placeholder="Password" required="" id="psw" onclick="passvalide()" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
                 <button>Sign Up</button>
+                <div id="message">
+                    <h3>Password must contain the following:</h3>
+                    <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                    <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                    <p id="number" class="invalid">A <b>number</b></p>
+                    <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                  </div>
             </form>
         </div>
         <div class="sign-in">
