@@ -204,6 +204,7 @@ button:active{
     color: #000;
     position: absolute;
     padding: 20px;
+    padding-top: 20px;
     margin-top: 10px;
   }
   
