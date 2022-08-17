@@ -88,6 +88,10 @@
     
 }
 
+input.title{
+    transition: 00.7s;
+}
+
 .profile-box button:hover {
     background-color:#000000;
     transition: 0.7s;
